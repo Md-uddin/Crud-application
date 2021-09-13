@@ -16,7 +16,7 @@ app.use(cors());
 
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
+    app.use(express.static("./client/build"));
   
 }
 //it must be below cors
