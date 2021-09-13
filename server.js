@@ -23,10 +23,8 @@ if (process.env.NODE_ENV === "production") {
 app.use('/', postroute);
 
 
-// const CONNECTION_URL = 'mongodb+srv://uddin786:uddin786@cluster0.gt755.mongodb.net/jsmastery?retryWrites=true&w=majority'
-
+const URI = "";
 const PORT = process.env.PORT || 5000;
-const URI = 'mongodb+srv://uddin786:uddin786@cluster0.gt755.mongodb.net/jsmastery?retryWrites=true&w=majority'
 
 mongoose.connect(process.env.MONGOODB_URI || URI , { useNewUrlParser: true, useUnifiedTopology: true })
 
